@@ -1,0 +1,16 @@
+{
+  "name": "iota",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@iota/curl-remote": "0.0.3",
+    "iota.lib.js": "^0.4.7",
+    "mqtt": "^2.16.0"
+  }
+}
