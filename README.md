@@ -8,7 +8,7 @@ L’elaborato che abbiamo deciso di scrivere per testare iota si compone di tre 
 L’idea è costruire un sistema che permetta ad un sensore di manifestare la propria presenza sul cloud 
 e che permetta ad una Dashboard di interagire con quest’ultimo on demand.
 
-![Schema dei soggetti](schema_1.png)
+![Schema dei soggetti](./img/schema_1.png)
 
 
 Una iota board è un device del network IoT, il suo compito è quello di pubblicare le informazioni dei propri sensori (grezze o aggregate) e di comandare eventualmente alcuni attuatori.
@@ -41,4 +41,4 @@ Il device sarà infatti in ascolto di nuovi messaggi sullo specifico indirizzo.
 
 Parallelamente sempre tramite l’ausilio del backend e del canale MQTT al quale è sottoscritto, il device può ricevere l’indirizzo della Dashboard per pubblicare informazioni.
 
-![Schema del Device](schema_2.png)
+![Schema del Device](./img/schema_2.png)
