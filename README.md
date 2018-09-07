@@ -7,6 +7,7 @@ L’elaborato che abbiamo deciso di scrivere per testare iota si compone di tre 
 
 L’idea è costruire un sistema che permetta ad un sensore di manifestare la propria presenza sul cloud 
 e che permetta ad una Dashboard di interagire con quest’ultimo on demand.
+
 ![Schema dei soggetti](schema_1.png)
 
 
@@ -39,4 +40,5 @@ Un’eventuale utilizzatore sarà quindi in grado di inviare informazioni al dev
 Il device sarà infatti in ascolto di nuovi messaggi sullo specifico indirizzo.
 
 Parallelamente sempre tramite l’ausilio del backend e del canale MQTT al quale è sottoscritto, il device può ricevere l’indirizzo della Dashboard per pubblicare informazioni.
+
 ![Schema del Device](schema_2.png)
