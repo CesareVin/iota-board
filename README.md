@@ -1,5 +1,13 @@
 # iota-board
-Project that use iota as iot communication channel between devices
+
+## How to use
+
+```
+$ node index.js 
+```
+
+## Theory about Board element
+
 L’elaborato che abbiamo deciso di scrivere per testare iota si compone di tre principali elementi:
 - IoTa Backend.
 - IoTa Board.
