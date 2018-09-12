@@ -6,10 +6,15 @@ const iota = new IOTA({ provider: "https://nodes.testnet.iota.org:443" });
 
 let mamState = Mam.init(iota, undefined,"1");
 let root = Mam.getRoot(mamState);
-console.log("ROOT :" + root);
+let serverAddr = "127.0.0.1"
+if(process.argv.length==3)
+  serverAddr = process.argv[2];
+
+console.log("[INFO] ROOT : " + root);
+console.log("[INFO] Connecting to mqtt-server at : "+serverAddr);
 
 client = mqtt.connect(
-  "mqtt://127.0.0.1",
+  "mqtt://"+serverAddr,
   {
     username: "",
     password: ""
