@@ -2,8 +2,12 @@
 
 ## How to use
 
+Il software necessita l'indirizzo di un server MQTT al quale connettersi.
+L'indirizzo può essere passato come argomento, se nessun argomento è passato
+si presuppone che il software sia nello scenario sviluppo e che il servizio sia locale, verrà quindi utilizzato `127.0.0.1` come server address.
+ES:
 ```
-$ node index.js 
+$ node index.js 192.168.1.100
 ```
 
 ## Theory about Board element
