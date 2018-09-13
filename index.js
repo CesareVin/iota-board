@@ -7,8 +7,11 @@ const iota = new IOTA({ provider: "https://nodes.testnet.iota.org:443" });
 let mamState = Mam.init(iota, undefined,"1");
 let root = Mam.getRoot(mamState);
 let serverAddr = "127.0.0.1"
+let boardName = "IoTa Board";
 if(process.argv.length==3)
   serverAddr = process.argv[2];
+if(process.argv.length==4)
+  boardName = process.argv[3]
 
 console.log("[INFO] ROOT : " + root);
 console.log("[INFO] Connecting to mqtt-server at : "+serverAddr);
@@ -41,7 +44,7 @@ client.subscribe('devices');
 
 //publish the device presence trought MQTT
 client.publish('devices', JSON.stringify({
-    name: "IoTa Board", 
+    name: boardName, 
     root:root
 }));
 

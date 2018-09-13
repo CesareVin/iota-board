@@ -5,9 +5,10 @@
 Il software necessita l'indirizzo di un server MQTT al quale connettersi.
 L'indirizzo può essere passato come argomento, se nessun argomento è passato
 si presuppone che il software sia nello scenario sviluppo e che il servizio sia locale, verrà quindi utilizzato `127.0.0.1` come server address.
+Passando un secondo parametro possiamo determinare il nome con il quale la nostra board si "manifesterà" sul broker MQTT
 ES:
 ```
-$ node index.js 192.168.1.100
+$ node index.js 192.168.1.100 Board1
 ```
 
 ## Theory about Board element
